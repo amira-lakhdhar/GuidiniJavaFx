@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="esprit.com.gui.AcceuilController">
+   <children>
+      <ImageView fitHeight="570.0" fitWidth="733.0" layoutX="-30.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/vol3.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="191.0" fitWidth="192.0" layoutX="-40.0" layoutY="-48.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Guidini%20(2).png" />
+         </image>
+      </ImageView>
+      <Label layoutX="176.0" layoutY="19.0" text="Bienvenue a Guidini" textFill="#021722">
+         <font>
+            <Font name="Autumn Regular" size="40.0" />
+         </font></Label>
+      <Button fx:id="vol" layoutX="28.0" layoutY="185.0" mnemonicParsing="false" onAction="#vol" prefHeight="70.0" prefWidth="160.0" stylesheets="@guidini.css" text="Vol" textFill="#222021">
+         <font>
+            <Font name="18thCentury" size="27.0" />
+         </font></Button>
+      <Button fx:id="compa" layoutX="219.0" layoutY="185.0" mnemonicParsing="false" onAction="#compa" prefHeight="70.0" prefWidth="216.0" stylesheets="@guidini.css" text="Compagnie Aerienne" textFill="#222021">
+         <font>
+            <Font size="19.0" />
+         </font></Button>
+      <Button fx:id="voya" layoutX="491.0" layoutY="185.0" mnemonicParsing="false" onAction="#voya" prefHeight="70.0" prefWidth="160.0" stylesheets="@guidini.css" text="Voyage" textFill="#222021">
+         <font>
+            <Font name="18thCentury" size="23.0" />
+         </font></Button>
+      <Button fx:id="btnretour" layoutX="204.0" layoutY="309.0" mnemonicParsing="false" onAction="#OnclickRetour" prefHeight="58.0" prefWidth="247.0" stylesheets="@guidini.css" text="Retour" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="645.0" prefWidth="1056.0" styleClass="white-backround" stylesheets="@bootstrap3.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="esprit.com.gui.BonneAdresseController">
+   <children>
+      <Label layoutX="27.0" layoutY="111.0" text="Nom:" />
+      <Label layoutX="15.0" layoutY="213.0" text="Region" />
+      <TextField fx:id="TfNom" layoutX="113.0" layoutY="104.0" />
+      <TextField fx:id="tfRegion" layoutX="113.0" layoutY="206.0" />
+      <Button fx:id="BtnAdd" layoutX="214.0" layoutY="504.0" mnemonicParsing="false" onAction="#OnaddClicked" prefHeight="31.0" prefWidth="107.0" stylesheets="@guidini.css" text="Add" />
+      <TableView fx:id="tableBonneAdresse" layoutX="354.0" layoutY="116.0" onMouseClicked="#OnClicktv" prefHeight="430.0" prefWidth="688.0">
+        <columns>
+            <TableColumn fx:id="colId" prefWidth="46.4000244140625" text="ID" visible="false" />
+          <TableColumn fx:id="colNom" prefWidth="137.5999755859375" text="Nom" />
+          <TableColumn fx:id="colType" prefWidth="121.5999755859375" text="Type" />
+            <TableColumn fx:id="colRegion" prefWidth="241.0" text="Region" />
+            <TableColumn fx:id="colRate" prefWidth="186.0" text="Rate" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnDelete" layoutX="61.0" layoutY="562.0" mnemonicParsing="false" onAction="#OndeleteClicked" prefHeight="31.0" prefWidth="107.0" stylesheets="@guidini.css" text="Delete" />
+      <Button fx:id="BtnModify" layoutX="61.0" layoutY="504.0" mnemonicParsing="false" onAction="#OnModifyClicked" prefHeight="31.0" prefWidth="107.0" stylesheets="@guidini.css" text="Modifier" />
+      <Label fx:id="lbType" layoutX="21.0" layoutY="381.0" prefHeight="26.0" prefWidth="74.0" text="Type" />
+      <ComboBox fx:id="ComboxType" layoutX="114.0" layoutY="379.0" prefHeight="39.0" prefWidth="226.0" stylesheets="@guidini.css" />
+
+      <TextField fx:id="tfrecherche" layoutX="354.0" layoutY="42.0" prefHeight="26.0" prefWidth="674.0" />
+      <Button fx:id="BtnMap" layoutX="921.0" layoutY="571.0" mnemonicParsing="false" onAction="#fnVoireMap" prefHeight="31.0" prefWidth="107.0" stylesheets="@guidini.css" text="Voire Map" />
+      <Button fx:id="BtnRetour" layoutX="27.0" layoutY="26.0" mnemonicParsing="false" onAction="#fnRetour" prefHeight="31.0" prefWidth="107.0" stylesheets="@guidini.css" text="Retour" />
+
+    </children>
+</AnchorPane>

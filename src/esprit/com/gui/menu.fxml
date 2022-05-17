@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="529.0" prefWidth="679.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="esprit.com.gui.MenuController">
+   <children>
+      <Button layoutX="191.0" layoutY="206.0" mnemonicParsing="false" onAction="#getviewHOTEL" onMouseClicked="#getview" prefHeight="76.0" prefWidth="298.0" stylesheets="@guidini.css" text="Gestion d'ebergement">
+         <font>
+            <Font name="Broadway" size="15.0" />
+         </font></Button>
+      <Label layoutX="151.0" layoutY="84.0" prefHeight="21.0" prefWidth="384.0" text="Menu  gestion Hotels et Restaurants">
+         <font>
+            <Font name="Broadway" size="18.0" />
+         </font>
+      </Label>
+      <ButtonBar layoutX="306.0" layoutY="84.0" prefHeight="64.0" prefWidth="200.0" />
+      <FontAwesomeIconView glyphName="HOTEL" />
+      <Button layoutX="186.0" layoutY="396.0" mnemonicParsing="false" onAction="#GETVIEWAFFICHAGE" prefHeight="86.0" prefWidth="308.0" styleClass="getviewaffichage" stylesheets="@guidini.css" text="AFFICHAGE DES RESERVATIONS HOTELS" visible="false">
+         <font>
+            <Font name="Bodoni MT Black" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="31.0" layoutY="462.0" mnemonicParsing="false" onAction="#retourmenu" prefHeight="40.0" prefWidth="120.0" stylesheets="@guidini.css" text="retour menu">
+         <font>
+            <Font name="Broadway" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
